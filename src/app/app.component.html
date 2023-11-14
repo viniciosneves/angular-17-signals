@@ -22,7 +22,12 @@
         </form>
       </div>
     </div>
-    <div class="row justify-content-center gap-2">
+    <div class="row justify-content-center gap-2 mt-2">
+      <div class="col-12">
+        <p class="alert alert-primary" role="alert">
+          Temos um total de {{ totalJogos() }} jogos cadastrados.
+        </p>
+      </div>
       @for (jogo of jogosSig(); track jogo) {
         <div class="col">
           <div class="card">
